@@ -6,7 +6,8 @@
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       },
-      "applicationUrl": "http://localhost:52465/"
+      "applicationUrl": "http://localhost:52465/",
+      "launchUrl": "api/stock/AAPL"
     }
   }
 }
