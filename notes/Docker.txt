@@ -1,0 +1,22 @@
+Cheatsheet:
+https://www.docker.com/sites/default/files/d8/2019-09/docker-cheat-sheet.pdf
+
+
+- Build the docker file/create image (from solution root)
+docker build -t stockservice.test . --file .\src\StockService\Dockerfile
+(image name will be stockservice.test)
+
+- Create and then run docker
+docker create -e FinnhubApiKey=<apikey> -it -p 5123:80 --name stockservice stockservice.test
+docker start stockservice
+
+- Create and run in one step
+(List all docker images to find the one above: docker image ls)
+docker run -it -p 5123:80 --name stockservice stockservice.test
+docker run -e FinnhubApiKey=$Env:FinnhubApiKey -it -p 5123:80 --name stockservice stockservice.test
+
+- Attach to running container
+docker attach stockservice
+
+- Delete container
+docker rm stockservice

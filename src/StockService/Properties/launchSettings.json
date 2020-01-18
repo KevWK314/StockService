@@ -3,11 +3,18 @@
     "StockService": {
       "commandName": "Project",
       "launchBrowser": true,
+      "launchUrl": "api/stock/AAPL",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       },
-      "applicationUrl": "http://localhost:52465/",
-      "launchUrl": "api/stock/AAPL"
+      "applicationUrl": "http://localhost:52465/"
+    },
+    "Docker": {
+      "commandName": "Docker",
+      "launchBrowser": true,
+      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}/api/stock/AAPL",
+      "environmentVariables": {},
+      "httpPort": 5123
     }
   }
 }

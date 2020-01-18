@@ -5,6 +5,13 @@ VisualStudioVersion = 16.0.29424.173
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StockService", "src\StockService\StockService.csproj", "{4CACB273-5940-4DA7-ABB1-C807F867DB6F}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "notes", "notes", "{7B816D14-B1D6-4D8D-AB80-15596D92F28E}"
+	ProjectSection(SolutionItems) = preProject
+		notes\Docker.txt = notes\Docker.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{551F49D5-F6C6-4EDD-999E-AF7FCECA3F2E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,6 +25,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4CACB273-5940-4DA7-ABB1-C807F867DB6F} = {551F49D5-F6C6-4EDD-999E-AF7FCECA3F2E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BB01BC5C-7F02-460D-A145-D5736A27091C}
