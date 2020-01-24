@@ -4,6 +4,7 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
     <DockerfileContext>..\..</DockerfileContext>
+    <DockerDebuggeeArguments>--additionalProbingPath /root/.nuget/fallbackpackages "bin/$(Configuration)/$(TargetFramework)/$(AssemblyName).dll" -e FinnhubApiKey=$(FinnhubApiKey)</DockerDebuggeeArguments>
   </PropertyGroup>
 
   <ItemGroup>
