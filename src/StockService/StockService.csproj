@@ -13,4 +13,10 @@
     <PackageReference Include="ThreeFourteen.QuickService" Version="0.1.0-alpha2" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="cert\stockservice.pfx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

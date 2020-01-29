@@ -16,5 +16,4 @@ RUN dotnet publish "StockService.csproj" -c Release -o /app/publish
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENV FinnhubApiKey invalid
 ENTRYPOINT ["dotnet", "StockService.dll"]
