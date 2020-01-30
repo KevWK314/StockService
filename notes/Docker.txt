@@ -28,3 +28,5 @@ docker rm stockservice
 https://developer.okta.com/blog/2019/09/18/build-a-simple-dotnet-core-app-in-docker
 openssl req -x509 -newkey rsa:4096 -keyout key.pem -out cert.pem -days 365
 openssl pkcs12 -export -out stockservice.pfx -inkey key.pem -in cert.pem
+
+http://parsstudent.com/asp-net-core-2-1-application-in-docker-with-https-enabled/
